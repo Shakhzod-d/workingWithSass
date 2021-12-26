@@ -1,0 +1,108 @@
+$main-color: #1eacc7
+$second-color: #ff5656
+
+=btn_hover
+	&:hover
+	background-image: none
+	background-color: $main-color
+
+
+.subtitle
+	margin-top: 19px
+	color: #222222
+	font-family: Roboto
+	font-size: 17px
+	font-weight: 400
+	line-height: 21px
+	text-align: center
+
+.mobile
+	min-height: 864px
+	padding: 48px 0 79px 0
+	background-color: rgba(243, 247, 225, 0.8)
+	.btn 
+		+btn_hover
+	.row
+		margin-top: 32px
+	&_item
+		position: relative
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-bottom: 19px
+		padding: 92px
+		&_1
+			background: url("../images/img-1.png") center (center/cover) no-repeat
+		&_2
+			background: url("../images/img-2.png") center (center/cover) no-repeat
+		&_3
+			background: url("../images/img-3.jpeg") center (center/cover) no-repeat
+		&_4
+			background: url("../images/img-4.jpeg") center (center/cover) no-repeat
+		&_5
+			background: url("../images/img-5.jpeg") center (center/cover) no-repeat
+		&_6
+			background: url("../images/img-6.jpeg") center (center/cover) no-repeat
+		&_subtitle
+			color: #ffffff
+			font-family: Roboto
+			font-size: 24px
+			font-weight: 400
+			line-height: 31px
+			text-transform: uppercase
+			text-align: center
+		&_plus
+			position: absolute
+			bottom: 35px
+			left: 50%
+			background-color: #ffffff
+			display: flex
+			transform: translateX(-50%)
+			width: 26px
+			height: 26px
+			margin: 0 auto
+			border-radius: 100%
+			cursor: pointer
+			&:before
+				position: absolute
+				top: 50%
+				left: 25%
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $main-color	
+				transiton: 0.3s all
+			&:after
+				position: absolute
+				top: 50%
+				left: 25%
+				transform: translateX(-50%)
+				transform: rotate(90deg)
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $main-color
+				transiton: 0.3s all	
+			&:hover
+				&:before, &:after
+					background-color: $second-color
+.require
+	padding: 68px 0 84px 0
+	&_block
+		margin: 33px 0 
+		&_nmb
+			margin-bottom: 0 
+	&_title
+		color: #1ca8c3
+		font-size: 22px
+		font-weight: 400
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		li
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px	
+		

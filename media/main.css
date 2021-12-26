@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.column {
+  margin-top: 50px;
+  text-align: center;
+  float: left;
+
+  background-color: red;
+}
+
+@media (max-width: 767px) {
+  .column {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .column {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .column {
+    width: 25%;
+  }
+}
+
+
+
+
+
+div{
+  border-top: 10px;
+  border-bottom: 5px;
+  border-left: 20px;
+  border-right: 1px;
+}
